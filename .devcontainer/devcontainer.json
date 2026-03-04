@@ -11,7 +11,10 @@
   "postCreateCommand": "bun i",
   "customizations": {
     "vscode": {
-      "extensions": ["biomejs.biome", "WakaTime.vscode-wakatime"]
+      "extensions": ["biomejs.biome", "WakaTime.vscode-wakatime"],
+      "settings": {
+        "editor.formatOnSave": true
+      }
     }
   }
 }
