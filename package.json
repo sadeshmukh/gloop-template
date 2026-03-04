@@ -1,0 +1,20 @@
+{
+	"name": "gloop-template",
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"dev": "vite",
+		"preview": "vite preview",
+		"zip": "bun run build && mkdir -p dist && zip -r dist/game.zip dist -x \"**/.DS_Store\"",
+		"check": "tsc"
+	},
+	"dependencies": {
+		"@kaplayjs/crew": "^2.1.0",
+		"kaplay": "^4000.0.0-alpha.26"
+	},
+	"devDependencies": {
+		"@types/node": "^25.3.3",
+		"typescript": "^5.9.3",
+		"vite": "^7.3.1"
+	}
+}

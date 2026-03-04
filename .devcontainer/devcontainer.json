@@ -1,0 +1,17 @@
+{
+  "name": "Gloop",
+  "image": "oven/bun:latest",
+  "forwardPorts": [3001],
+  "portsAttributes": {
+    "3001": {
+      "label": "Dev server",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "bun i",
+  "customizations": {
+    "vscode": {
+      "extensions": ["biomejs.biome", "WakaTime.vscode-wakatime"]
+    }
+  }
+}
